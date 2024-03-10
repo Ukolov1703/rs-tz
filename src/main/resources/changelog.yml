@@ -1,24 +1,24 @@
 databaseChangeLog:
-  -changeSet:
+  - changeSet:
     id: 1
     author: Danil
     changes:
-      -createTable:
+      - createTable:
         tableName: test
         remarks: Тест
         columns:
           - column:
-              name: id
-              type: integer
-              autoIncrement: true
-              constrains:
-                primaryKey: true
-                primaryKeyName: test_pk
-                nullable: false
+            name: id
+            type: integer
+            autoIncrement: true
+            constrains:
+              primaryKey: true
+              primaryKeyName: test_pk
+              nullable: false
           - column:
-              name: title
-              type: varchar(50)
-              constrains:
-                nullable: false
+            name: title
+            type: varchar(50)
+            constrains:
+              nullable: false
 
 
